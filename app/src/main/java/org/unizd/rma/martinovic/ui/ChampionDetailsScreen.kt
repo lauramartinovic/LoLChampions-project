@@ -55,7 +55,6 @@ fun ChampionDetailsScreen(
 
             Divider()
 
-            // Info (attack/defense/magic/difficulty)
             champ?.info?.let { info ->
                 Text("INFO  attack=${info.attack}  defense=${info.defense}  magic=${info.magic}  difficulty=${info.difficulty}")
             }
@@ -73,7 +72,6 @@ fun ChampionDetailsScreen(
                 )
             }
 
-            // Ikonica (verzionirana)
             AsyncImage(
                 model = champ?.image?.full?.let { full ->
                     if (version.isNotBlank())
